@@ -1,0 +1,6 @@
+POST http://localhost:8080/login
+
+{    
+	"email" : "prezes.sikora123@gmail.com",
+	"password" : "onyx"
+}

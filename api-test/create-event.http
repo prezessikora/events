@@ -1,0 +1,36 @@
+DELETE  http://localhost:8080/events/58
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InByZXplcy5zaWtvcmExMjNAZ21haWwuY29tIiwiZXhwIjoxNzQxMTkyMzcxLCJ1c2VySWQiOjJ9.ENao8E6RrwbACsUE3oKshXLiJrNx_LmZ9rskLaMx8ug
+
+###
+
+GET http://localhost:8080/events/1
+
+###
+
+GET http://localhost:8080/events
+
+###
+
+POST http://localhost:8080/events
+content-type: application/json
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InByZXplcy5zaWtvcmExMjNAZ21haWwuY29tIiwiZXhwIjoxNzQwNjY5ODA3LCJ1c2VySWQiOjJ9.QZz3luvgopUatmVaXz97SJtJ7w03_JGBtGTjCY-O9_k
+
+{    
+	"name" : "Test event",
+	"description" : "Test description",
+	"location" : "test location",
+	"dateTime" : "2025-02-12T15:30:00.000Z"
+}
+
+###
+
+PUT http://localhost:8080/events/3
+content-type: application/json
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InByZXplcy5zaWtvcmExMjNAZ21haWwuY29tIiwiZXhwIjoxNzQwNjY5ODA3LCJ1c2VySWQiOjJ9.QZz3luvgopUatmVaXz97SJtJ7w03_JGBtGTjCY-O9_k
+
+{    
+	"name" : "Test event updated",
+	"description" : "Test descripti   3123213 123 on",
+	"location" : "test location",
+	"dateTime" : "2025-02-12T15:30:00.000Z"
+}
