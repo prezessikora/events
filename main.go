@@ -1,9 +1,9 @@
 package main
 
 import (
-	"com.sikora/events/db"
-	"com.sikora/events/routes"
 	"github.com/gin-gonic/gin"
+	"github.com/prezessikora/events/db"
+	"github.com/prezessikora/events/routes"
 )
 
 func main() {

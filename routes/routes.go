@@ -1,8 +1,8 @@
 package routes
 
 import (
-	"com.sikora/events/middleware"
 	"github.com/gin-gonic/gin"
+	"github.com/prezessikora/events/middleware"
 )
 
 func RegisterRoutes(server *gin.Engine) {

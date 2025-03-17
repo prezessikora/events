@@ -4,7 +4,7 @@ import (
 	"errors"
 	"time"
 
-	"com.sikora/events/db"
+	"github.com/prezessikora/events/db"
 )
 
 type Event struct {

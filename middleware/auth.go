@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"net/http"
 
-	"com.sikora/events/utils"
 	"github.com/gin-gonic/gin"
+	"github.com/prezessikora/events/utils"
 )
 
 func Authenticate(ctx *gin.Context) {

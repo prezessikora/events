@@ -7,8 +7,8 @@ import (
 	"net/http"
 	"strconv"
 
-	"com.sikora/events/models"
 	"github.com/gin-gonic/gin"
+	"github.com/prezessikora/events/models"
 )
 
 func getEventById(ctx *gin.Context) {

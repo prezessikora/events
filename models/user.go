@@ -4,8 +4,8 @@ import (
 	"errors"
 	"fmt"
 
-	"com.sikora/events/db"
-	"com.sikora/events/utils"
+	"github.com/prezessikora/events/db"
+	"github.com/prezessikora/events/utils"
 )
 
 type User struct {

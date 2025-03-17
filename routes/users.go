@@ -4,9 +4,9 @@ import (
 	"fmt"
 	"net/http"
 
-	"com.sikora/events/models"
-	"com.sikora/events/utils"
 	"github.com/gin-gonic/gin"
+	"github.com/prezessikora/events/models"
+	"github.com/prezessikora/events/utils"
 )
 
 func createUser(ctx *gin.Context) {
