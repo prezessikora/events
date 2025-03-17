@@ -1,4 +1,4 @@
-module com.sikora/events
+module github.com/prezessikora/events
 
 go 1.23.5
 
