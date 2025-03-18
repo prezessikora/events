@@ -39,6 +39,7 @@ func (service Events) GetEvent(eventId int) (*Event, error) {
 	log.Printf("Fetching event with id4: [%v]", eventId)
 	log.Printf("Fetching event with id4: [%v]", eventId)
 	log.Printf("Fetching event with id5: [%v]", eventId)
+	log.Printf("Fetching event with id5: [%v]", eventId)
 	c := http.Client{Timeout: service.timeout}
 	url := fmt.Sprintf(service.url, eventId)
 
