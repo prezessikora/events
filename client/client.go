@@ -34,6 +34,7 @@ func NewEvents() Events {
 
 func (service Events) GetEvent(eventId int) (*Event, error) {
 	log.Printf("Fetching event with id: [%v]", eventId)
+	log.Printf("Fetching event with id2: [%v]", eventId)
 	c := http.Client{Timeout: service.timeout}
 	url := fmt.Sprintf(service.url, eventId)
 
