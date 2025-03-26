@@ -4,6 +4,8 @@ import (
 	"database/sql"
 	"errors"
 	"fmt"
+	"github.com/prezessikora/events/fanout"
+	"log"
 	"net/http"
 	"strconv"
 
@@ -87,7 +89,14 @@ func deleteEvent(ctx *gin.Context) {
 		ctx.JSON(http.StatusInternalServerError, gin.H{"message": "could not delete the event"})
 		return
 	}
-	ctx.JSON(http.StatusOK, gin.H{"message": "event deleted"})
+	// publish deletion event with event id as message body
+	err = fanout.PublishFanOut("events.event-deletions", strconv.Itoa(id))
+	if err != nil {
+		log.Println(err)
+		ctx.JSON(http.StatusOK, gin.H{"status": "event deleted", "notification": "failed"})
+		return
+	}
+	ctx.JSON(http.StatusOK, gin.H{"status": "event deleted", "notification": "delivered"})
 
 }
 

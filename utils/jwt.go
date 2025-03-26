@@ -39,7 +39,7 @@ func VerifyToken(token string) (int, error) {
 
 	claims, ok := parsedToken.Claims.(jwt.MapClaims)
 	if !ok {
-		return 0, errors.New("invalud token claims")
+		return 0, errors.New("invalid token claims")
 	}
 	fmt.Println(parsedToken.Claims)
 	// email, _ := claims["email"].(string)

@@ -86,7 +86,7 @@ func GetAll() ([]Event, error) {
 	}
 	defer rows.Close()
 
-	events := []Event{}
+	var events []Event
 	for rows.Next() {
 		event := Event{}
 		err := rows.Scan(&event.ID, &event.Name, &event.Description, &event.Location, &event.DateTime, &event.UserID)
