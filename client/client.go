@@ -28,7 +28,8 @@ type Events struct {
 func NewEvents() Events {
 	return Events{
 		timeout: time.Duration(1) * time.Second,
-		url:     "http://localhost:8080/events/%d",
+		// TOOD get this from os env vars set up by docker-compose or container running env
+		url: "http://events-service:8080/events/%d",
 	}
 }
 
