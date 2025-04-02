@@ -10,6 +10,8 @@ import (
 func main() {
 
 	db.InitDB()
+	v := 10
+	
 	server := gin.Default()
 	routes.RegisterRoutes(server)
 	fmt.Sprintf("aaaa")
